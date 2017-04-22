@@ -1,0 +1,143 @@
+{
+  "project_info": {
+    "project_number": "158552138160",
+    "firebase_url": "https://slipscloud.firebaseio.com",
+    "project_id": "slipscloud",
+    "storage_bucket": "slipscloud.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158552138160:android:8097a21022647dd0",
+        "android_client_info": {
+          "package_name": "com.droidloft.slips"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158552138160-viarf3kg9cqtg2v68eoijvl2tuss5qnf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.droidloft.slips",
+            "certificate_hash": "1c752e89ad16ebeba7aea4163e297016c32c03e0"
+          }
+        },
+        {
+          "client_id": "158552138160-pnq4qu3hoj53bd4f18v4s5pnbgn50rhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsM95RjHc4mOFhVWDN8mMxBwtbT2tdE6o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158552138160-pnq4qu3hoj53bd4f18v4s5pnbgn50rhu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158552138160:android:7328d4e5d4ddd977",
+        "android_client_info": {
+          "package_name": "com.droidloft.slipssync"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158552138160-dahrke5dgm9vbkg25lnc9jiiiiqbirna.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.droidloft.slipssync",
+            "certificate_hash": "1c752e89ad16ebeba7aea4163e297016c32c03e0"
+          }
+        },
+        {
+          "client_id": "158552138160-pnq4qu3hoj53bd4f18v4s5pnbgn50rhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsM95RjHc4mOFhVWDN8mMxBwtbT2tdE6o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158552138160-pnq4qu3hoj53bd4f18v4s5pnbgn50rhu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:158552138160:android:28f5dd3258e4c0d7",
+        "android_client_info": {
+          "package_name": "com.droidloft.slipspro"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "158552138160-vajcqam3ocph6ov8fhcrjc7m6gv2k7ev.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.droidloft.slipspro",
+            "certificate_hash": "1c752e89ad16ebeba7aea4163e297016c32c03e0"
+          }
+        },
+        {
+          "client_id": "158552138160-pnq4qu3hoj53bd4f18v4s5pnbgn50rhu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBsM95RjHc4mOFhVWDN8mMxBwtbT2tdE6o"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "158552138160-pnq4qu3hoj53bd4f18v4s5pnbgn50rhu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
