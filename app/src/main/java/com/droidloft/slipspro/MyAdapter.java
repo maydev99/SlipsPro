@@ -17,10 +17,19 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.RecyclerHolder> {
 
     private List<ListItem> listData;
     private LayoutInflater inflater;
+    private ItemClickCallback itemClickCallback;
+
+    interface ItemClickCallback {
+        void onItemClick(int p);
+    }
 
     MyAdapter(List<ListItem> listData, Context c){
         this.inflater = LayoutInflater.from(c);
         this.listData = listData;
+    }
+
+    void setItemClickCallback(final ItemClickCallback inItemClickCallback){
+        this.itemClickCallback = inItemClickCallback;
     }
 
     @Override
@@ -34,7 +43,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.RecyclerHolder> {
         ListItem item = listData.get(position);
         holder.dateText.setText(item.getDateText());
         holder.descriptionText.setText(item.getDescriptionText());
-        holder.amountText.setText(item.getDescriptionText());
+        holder.amountText.setText(item.getAmountText());
         holder.typeText.setText(item.getTypeText());
 
 
@@ -45,7 +54,7 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.RecyclerHolder> {
         return listData.size();
     }
 
-    public class RecyclerHolder extends RecyclerView.ViewHolder {
+    public class RecyclerHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         private TextView dateText;
         private TextView typeText;
         private TextView descriptionText;
@@ -59,6 +68,15 @@ public class MyAdapter extends RecyclerView.Adapter<MyAdapter.RecyclerHolder> {
             descriptionText = (TextView)itemView.findViewById(R.id.item_description_textview);
             amountText = (TextView)itemView.findViewById(R.id.item_amount_textview);
             container = itemView.findViewById(R.id.item_root_container);
+            container.setOnClickListener(this);
+        }
+
+        @Override
+        public void onClick(View view) {
+            if(view.getId() == R.id.item_root_container){
+                itemClickCallback.onItemClick(getAdapterPosition());
+            }
+
         }
     }
 }

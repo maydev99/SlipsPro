@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
 
     private DatabaseReference rootRef = FirebaseDatabase.getInstance().getReference();
     private DatabaseReference entryRef = rootRef.child("entryRef");
+    private DatabaseReference dataRef = entryRef.child("dataRef");
     private DatabaseReference checkNumberRef = rootRef.child("checknumref");
 
     @Override
@@ -76,11 +77,23 @@ public class MainActivity extends AppCompatActivity {
                     descriptionEditText.requestFocus();
 
 
+
+                    String key = entryRef.child("dataRef").push().getKey();
+
+                    entryRef.child(key).child("dateRef").setValue(date);
+                    entryRef.child(key).child("descRef").setValue(description);
+                    entryRef.child(key).child("amountRef").setValue(amount);
+                    entryRef.child(key).child("typeRef").setValue(type);
+
+
+
+
+
                     //Push Data to Firebase
-                    entryRef.push().setValue(date);
-                    entryRef.push().setValue(description);
-                    entryRef.push().setValue(amount);
-                    entryRef.push().setValue(type);
+                    /*entryRef.push().child("dateRef").setValue(date);
+                    entryRef.push().child("descRef").setValue(description);
+                    entryRef.push().child("amountRef").setValue(amount);
+                    entryRef.push().child("typeRef").setValue(type);*/
                 }
 
 
@@ -186,4 +199,6 @@ public class MainActivity extends AppCompatActivity {
         }
         return super.onOptionsItemSelected(item);
     }
+
+
 }
